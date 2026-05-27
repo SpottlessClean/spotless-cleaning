@@ -88,7 +88,7 @@ export default function Hero() {
           {/* Right: Hero photo */}
           <div className="relative mt-10 lg:mt-4 rounded-3xl overflow-hidden shadow-2xl border border-gray-100 aspect-[16/10] lg:aspect-auto lg:h-[520px]">
             <img
-              src="/gallery/hero-bathroom.jpg"
+              src="/hero-kitchen.jpg"
               alt="Beautiful spotless modern bathroom in a Horry County home"
               className="absolute inset-0 w-full h-full object-cover"
             />

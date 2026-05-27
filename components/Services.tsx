@@ -156,28 +156,37 @@ export default function Services() {
         </div>
       </div>
 
-      {/* Featured Transformation - Floor Restoration */}
+      {/* Real Results Gallery - Using your latest photos */}
       <div className="mt-16">
         <div className="text-center mb-8">
           <div className="inline-block px-4 py-1.5 rounded-full bg-brand-teal/10 text-brand-teal font-semibold text-sm tracking-widest mb-3">
-            FEATURED TRANSFORMATION
+            REAL RESULTS
           </div>
-          <h3 className="text-3xl font-semibold tracking-tight">Hardwood Floor Restoration</h3>
-          <p className="text-gray-600 mt-2">Before &amp; after from a home in Horry County.</p>
+          <h3 className="text-3xl font-semibold tracking-tight">Spotless Homes</h3>
+          <p className="text-gray-600 mt-2">A look at the homes we’ve transformed across Horry County.</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-5 max-w-5xl mx-auto">
-          <div className="relative rounded-2xl overflow-hidden shadow">
-            <img src="/floor-before.jpg" alt="Before: Dirty, scuffed hardwood floors" className="w-full object-cover" />
-            <div className="absolute top-4 left-4 bg-black/75 text-white text-xs font-semibold px-3 py-1 rounded">BEFORE</div>
-          </div>
-          <div className="relative rounded-2xl overflow-hidden shadow">
-            <img src="/floor-after.jpg" alt="After: Beautifully restored hardwood floors" className="w-full object-cover" />
-            <div className="absolute top-4 left-4 bg-brand-teal text-white text-xs font-semibold px-3 py-1 rounded">AFTER</div>
-          </div>
+        {/* Real customer photos from your gallery */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {[
+            "/gallery/bathroom-2.JPG",      // stunning navy double vanity + tub
+            "/gallery/bathroom-teal.jpg",   // teal bathroom with double sinks
+            "/gallery/bathroom-teal2.jpg",  // teal bathroom wide view
+            "/gallery/bedroom.jpeg",        // beautiful bedroom
+            "/gallery/closet.jpg",          // organized walk-in closet
+            "/gallery/floor-after.jpg",     // clean floor after
+            "/gallery/floor-before.jpg",    // floor before (pairs with after)
+          ].map((src, idx) => (
+            <div key={idx} className="overflow-hidden rounded-2xl">
+              <img 
+                src={src} 
+                alt="Spotless cleaning result in Horry County" 
+                className="w-full h-full object-cover aspect-[4/3] hover:scale-105 transition-transform duration-300" 
+              />
+            </div>
+          ))}
         </div>
       </div>
-
     </section>
   );
 }

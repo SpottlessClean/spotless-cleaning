@@ -1,6 +1,6 @@
 # Spotless Cleaning
 
-**Professional, modern, ready-to-launch website** for Spotless Cleaning serving Rockville and Montgomery County.
+**Professional, modern, ready-to-launch website** for Spotless Cleaning serving Horry County and the Myrtle Beach area.
 
 > **Want to go live right now?** → Open [DEPLOY.md](./DEPLOY.md) for copy-paste commands.
 
@@ -70,7 +70,7 @@ Follow the prompts. Done.
 
 ### After Deployment
 
-- Go to your project on Vercel → **Settings → Domains** to add your real domain (spotlesscleaningrockville.com etc.)
+- Go to your project on Vercel → **Settings → Domains** to add your real domain (spotlesscleaningmyrtlebeach.com etc.)
 - The site is already optimized with security headers via `vercel.json`
 
 ### Connect the booking form for real emails (important for launch)

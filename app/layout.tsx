@@ -3,14 +3,14 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "Spotless Cleaning | Professional House Cleaning Services",
-  description: "Trusted professional cleaning services. Residential & specialty cleaning in Rockville and Montgomery County. Licensed, insured, and background-checked cleaners. Book your spotless clean today.",
+  title: "Spotless Cleaning | Leaving Horry County Spotless",
+  description: "Leaving Horry County Spotless. Professional residential, vacation rental, and commercial cleaning. Serving Aynor, Conway, Carolina Forest, Myrtle Beach & all of Horry County. Book your spotless clean today.",
   icons: {
     icon: "/favicon.svg",
   },
   openGraph: {
     title: "Spotless Cleaning | Professional Home Cleaning Services",
-    description: "Expert house cleaning, deep cleans, move-in/out, and more. Serving Rockville and Montgomery County. Same-week availability. 100% satisfaction guaranteed.",
+    description: "Leaving Horry County Spotless. Expert residential, vacation rental & commercial cleaning. Serving Aynor, Conway, Carolina Forest, Myrtle Beach and all of Horry County. Same-week availability.",
     images: [{ url: "/hero-kitchen.jpg" }],
   },
 };

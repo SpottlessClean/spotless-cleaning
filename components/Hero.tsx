@@ -34,16 +34,27 @@ export default function Hero() {
 
             {/* Headline matching reference style */}
             <h1 className="text-6xl md:text-7xl font-bold tracking-[-3.8px] leading-[0.9] text-gray-950 mb-5">
-              Leaving Homes<br />Spotless.
+              Leaving Horry County<br />Spotless.
             </h1>
 
             <p className="text-2xl md:text-3xl font-medium tracking-[-1.1px] text-brand-teal-dark mb-3">
               Professional cleaning you can trust.
             </p>
 
-            <p className="text-xl text-gray-600 mb-9">
+            <p className="text-xl text-gray-600 mb-6">
               Experienced, background-checked cleaners using premium eco-friendly products.
             </p>
+
+            {/* Subtle July 4th Special - Homeaglow-inspired style */}
+            <div className="mb-8 inline-flex flex-col sm:flex-row items-center gap-x-3 gap-y-1 rounded-full border border-brand-teal/20 bg-brand-teal/5 px-5 py-2 text-sm">
+              <span className="font-semibold text-brand-teal tracking-wide">July 4th Special</span>
+              <span className="text-gray-600">Limited slots for pre-holiday cleans</span>
+            </div>
+
+            {/* SPOTLESS PROMISE - Subtle but visible */}
+            <div className="mb-6 text-xs tracking-[2.5px] font-semibold text-brand-gold/70">
+              SPOTLESS PROMISE • THOROUGH INSPECTIONS • DETAILED CLEANS
+            </div>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
@@ -77,13 +88,13 @@ export default function Hero() {
           {/* Right: Hero photo */}
           <div className="relative mt-10 lg:mt-4 rounded-3xl overflow-hidden shadow-2xl border border-gray-100 aspect-[16/10] lg:aspect-auto lg:h-[520px]">
             <img
-              src="/hero-kitchen.jpg"
-              alt="Spotless modern kitchen in a Maryland home"
+              src="/gallery/hero-bathroom.jpg"
+              alt="Beautiful spotless modern bathroom in a Horry County home"
               className="absolute inset-0 w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-black/5 to-transparent" />
             <div className="absolute bottom-6 left-6 text-white text-sm font-medium tracking-wider">
-              ROCKVILLE, MD
+              HORRY COUNTY, SC
             </div>
           </div>
         </div>

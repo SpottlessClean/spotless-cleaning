@@ -23,7 +23,7 @@ git add .
 git commit -m "Initial launch: Spotless Cleaning website"
 
 # Create the repo on GitHub first (via website), then connect it:
-git remote add origin https://github.com/YOUR_USERNAME/spotless-cleaning-rockville.git
+git remote add origin https://github.com/YOUR_USERNAME/spotless-cleaning.git
 
 # Push
 git branch -M main
@@ -35,10 +35,10 @@ git push -u origin main
 1. Go to https://vercel.com
 2. Sign in with GitHub
 3. Click **"Add New Project"**
-4. Select your `spotless-cleaning-rockville` repo
+4. Select your `spotless-cleaning` repo
 5. Click **Deploy**
 
-Your website will be live instantly at `https://spotless-cleaning-rockville.vercel.app`
+Your website will be live instantly at `https://spotless-cleaning.vercel.app`
 
 ---
 

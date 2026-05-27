@@ -1,30 +1,31 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    quote: "Spotless Cleaning has been cleaning our home in the King Farm neighborhood for over a year. They are always on time, incredibly thorough, and our house actually smells fresh and clean. Highly recommend!",
+    quote: "Spotless Cleaning has been cleaning our home in Carolina Forest for over a year. They are always on time, incredibly thorough, and our house actually smells fresh and clean. Highly recommend!",
     name: "Priya & Michael S.",
-    location: "King Farm, Rockville",
+    location: "Carolina Forest, Myrtle Beach",
     rating: 5,
   },
   {
-    quote: "We used them for our move-out clean in Twinbrook. The landlord gave us back our full security deposit because the place looked brand new. Worth every penny. Will use again for sure.",
+    quote: "We used them for our move-out clean in Murrells Inlet. The landlord gave us back our full security deposit because the place looked brand new. Worth every penny. Will use again for sure.",
     name: "David Chen",
-    location: "Twinbrook, Rockville",
+    location: "Murrells Inlet",
     rating: 5,
   },
   {
-    quote: "Best cleaning service we’ve tried in Montgomery County. The team is professional, respectful of our home, and never cuts corners. My kids have allergies and they use great non-toxic products.",
+    quote: "Best cleaning service we’ve tried on the Grand Strand. The team is professional, respectful of our home, and never cuts corners. My kids have allergies and they use great non-toxic products.",
     name: "Elena R.",
-    location: "North Bethesda",
+    location: "Surfside Beach",
     rating: 5,
   },
   {
     quote: "I book recurring bi-weekly cleans and it has been a game changer for our busy family. The same two cleaners come every time and they know exactly what we like. Thank you Spotless!",
     name: "The Patel Family",
-    location: "Fallsgrove, Rockville",
+    location: "Conway",
     rating: 5,
   },
 ];
@@ -42,7 +43,14 @@ export default function Testimonials() {
 
       <div className="grid md:grid-cols-2 gap-6">
         {testimonials.map((t, idx) => (
-          <div key={idx} className="testimonial-card">
+          <motion.div
+            key={idx}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: idx * 0.1 }}
+            viewport={{ once: true }}
+            className="testimonial-card"
+          >
             <div className="flex gap-1 mb-5">
               {Array.from({ length: t.rating }).map((_, i) => (
                 <span key={i} className="text-brand-gold text-xl">★</span>
@@ -60,7 +68,7 @@ export default function Testimonials() {
                 <div className="text-sm text-gray-500">{t.location}</div>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
 

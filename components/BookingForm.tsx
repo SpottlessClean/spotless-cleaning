@@ -156,6 +156,23 @@ export default function BookingForm() {
         </div>
         <h2 className="section-title mb-3">Book your clean in 60 seconds</h2>
         <p className="text-xl text-gray-600">We’ll confirm within 2 hours. Same-week slots available.</p>
+
+        {/* Subtle July 4th Special - Homeaglow inspired */}
+        <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-brand-teal/20 bg-brand-teal/5 px-4 py-1 text-sm">
+          <span className="font-medium text-brand-teal">July 4th Special</span>
+          <span className="text-gray-600">— Limited slots before the holiday</span>
+        </div>
+
+        {/* Text option as alternative to the form */}
+        <div className="mt-5 text-sm">
+          <span className="text-gray-600">Don’t want to fill this out?</span>{" "}
+          <a 
+            href="sms:8436534081?body=Hi, I'd like a quote for cleaning services." 
+            className="font-semibold text-brand-teal hover:underline"
+          >
+            Text us for a quote → (843) 653-4081
+          </a>
+        </div>
       </div>
 
       <form onSubmit={handleSubmit} className="card p-8 md:p-10 border-brand-teal/20">
@@ -205,7 +222,7 @@ export default function BookingForm() {
               value={formData.address}
               onChange={(e) => handleChange("address", e.target.value)}
               className={`form-input ${errors.address ? "border-red-400" : ""}`}
-              placeholder="123 Main Street, Rockville, MD 20850"
+              placeholder="123 Main Street, Myrtle Beach, SC 29577"
             />
             {errors.address && <p className="text-red-500 text-xs mt-1">{errors.address}</p>}
           </div>

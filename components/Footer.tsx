@@ -10,7 +10,8 @@ export default function Footer() {
         <div className="md:col-span-5">
           <SpotlessLogo className="mb-4" />
           <p className="max-w-xs text-[15px] text-gray-500">
-            Professional house cleaning services for homes in Rockville and Montgomery County. Trusted since 2019.
+            Professional house cleaning services for homes across Horry County and the Grand Strand. Trusted since 2019.
+            <span className="block mt-1 text-xs">Locally Owned &amp; Operated</span>
           </p>
           <div className="mt-6 text-xs tracking-widest text-gray-600">LICENSED • INSURED • BACKGROUND CHECKED</div>
         </div>
@@ -33,9 +34,9 @@ export default function Footer() {
           <a href="mailto:hello@spotlesscleaning.com" className="block hover:text-white transition mb-4">hello@spotlesscleaning.com</a>
 
           <div className="text-xs leading-relaxed text-gray-500">
-            Serving Rockville, North Bethesda,<br />
-            Potomac, Gaithersburg, and all of<br />
-            Montgomery County, Maryland
+            Serving Aynor, Conway, Carolina Forest,<br />
+            Myrtle Beach, Surfside Beach, Murrells Inlet,<br />
+            North Myrtle Beach, and all of Horry County, SC
           </div>
         </div>
       </div>

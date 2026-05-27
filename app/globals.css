@@ -36,7 +36,7 @@ body {
 }
 
 .service-card {
-  @apply bg-white rounded-2xl p-6 border border-brand-teal/20 hover:border-brand-teal/40 hover:shadow-lg transition-all group;
+  @apply bg-white rounded-2xl p-6 border border-brand-teal/20 hover:border-brand-teal/40 hover:shadow-lg transition-all;
 }
 
 .testimonial-card {

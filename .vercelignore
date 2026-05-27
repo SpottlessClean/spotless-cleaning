@@ -1,0 +1,9 @@
+# Development files
+*.md
+.env*
+.DS_Store
+
+# Local only
+.git
+.vscode
+.idea

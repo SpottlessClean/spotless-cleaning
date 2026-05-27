@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-teal: #0D9488;
+  --brand-teal-dark: #0F766E;
+  --brand-teal-bright: #14B8A6;
+  --brand-gold: #B8860B;
+  --brand-gold-light: #D4AF37;
+}
+
+body {
+  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Professional polish */
+.btn-primary {
+  @apply bg-brand-teal hover:bg-brand-teal-dark text-white font-semibold px-8 py-3.5 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl active:scale-[0.985];
+}
+
+.btn-secondary {
+  @apply bg-white hover:bg-gray-50 text-brand-teal-dark border-2 border-brand-teal font-semibold px-8 py-3.5 rounded-xl transition-all duration-200;
+}
+
+.btn-gold {
+  @apply bg-brand-gold hover:bg-[#A67C00] text-white font-semibold px-8 py-3.5 rounded-xl transition-all duration-200 shadow-md;
+}
+
+.section-title {
+  @apply text-4xl md:text-5xl font-bold tracking-tighter text-gray-900;
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow-sm border border-gray-100 hover:shadow-md hover:border-gray-200 transition-all duration-300;
+}
+
+.service-card {
+  @apply bg-white rounded-2xl p-6 border border-brand-teal/20 hover:border-brand-teal/40 hover:shadow-lg transition-all group;
+}
+
+.testimonial-card {
+  @apply bg-white rounded-3xl p-8 border border-gray-100 shadow-sm;
+}
+
+.form-input {
+  @apply w-full px-4 py-3.5 rounded-xl border border-gray-200 bg-white text-gray-900 placeholder:text-gray-400 focus:border-brand-teal focus:ring-1 focus:ring-brand-teal outline-none transition-all;
+}
+
+.price-card {
+  @apply bg-white rounded-3xl p-8 border-2 border-gray-100 flex flex-col transition-all hover:border-brand-teal/30 hover:-translate-y-0.5;
+}
+
+.price-card.featured {
+  @apply border-brand-teal shadow-xl relative;
+}
+
+.nav-link {
+  @apply text-gray-700 hover:text-brand-teal transition-colors font-medium;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  animation: slideDown 0.2s ease-out forwards;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Trust badge */
+.trust-badge {
+  @apply flex items-center gap-2 text-sm font-medium text-gray-600 bg-white/80 backdrop-blur px-4 py-2 rounded-full border border-gray-200;
+}
+
+/* Booking form success */
+.success-check {
+  animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Subtle sparkle for logo */
+.sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+/* Clean pricing highlight */
+.price-number {
+  font-feature-settings: "tnum";
+}
